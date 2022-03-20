@@ -5,7 +5,7 @@ TERMUX_PKG_MAINTAINER="@termux"
 _COMMIT=1d15bafb5003cf36dbfdd4c839dbcc56368fb48e
 TERMUX_PKG_VERSION="1.8.2-6529-g${_COMMIT:0:8}"
 TERMUX_PKG_SRCURL="https://github.com/tdlib/td.git"
-TERMUX_PKG_GIT_BRANCH=${_COMMIT}
+TERMUX_PKG_GIT_BRANCH=master
 TERMUX_PKG_DEPENDS="readline, openssl (>= 1.1.1), zlib"
 TERMUX_PKG_HOSTBUILD=true
 
