@@ -32,14 +32,6 @@ TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 -Dandroid-media-ndk=disabled
 "
 
-termux_step_post_get_source() {
-	# Version guard
-	local ver_m=${TERMUX_PKG_VERSION#*:}
-	local ver_x=$(. $TERMUX_SCRIPTDIR/x11-packages/mpv-x/build.sh; echo ${TERMUX_PKG_VERSION#*:})
-	if [ "${ver_m}" != "${ver_x}" ]; then
-		termux_error_exit "Version mismatch between mpv and mpv-x."
-	fi
-}
 
 termux_step_pre_configure() {
 	LDFLAGS+=" -landroid-glob"
