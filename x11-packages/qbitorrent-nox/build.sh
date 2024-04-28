@@ -18,6 +18,6 @@ TERMUX_PKG_EXTRA_CONFIGURE_ARGS="
 -Dstatic_runtime=on
 -DCMAKE_INSTALL_PREFIX="${TERMUX_PREFIX}"
 "
-termux_step_pre_configure() {
-	./configure --disable-gui
-}			
+#termux_step_pre_configure() {
+#	./configure --disable-gui
+#}			
