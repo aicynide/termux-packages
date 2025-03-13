@@ -319,9 +319,6 @@ PACKAGES+=" tree-sitter-cli"
 # Needed by wlroots
 PACKAGES+=" glslang-tools"
 
-# Needed by stash
-PACKAGES+=" node-yarnpkg"
-
 # Do not require sudo if already running as root.
 SUDO="sudo"
 if [ "$(id -u)" = "0" ]; then
