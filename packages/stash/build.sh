@@ -12,7 +12,6 @@ TERMUX_PKG_HOSTBUILD=true
 termux_step_host_build() {
 	termux_setup_nodejs
 
-	apt-get install -yq node-yarnpkg
 	cp -r $TERMUX_PKG_SRCDIR/ui/v2.5 ./ui-v2.5
 	cd ui-v2.5
 	yarn install --frozen-lockfile
